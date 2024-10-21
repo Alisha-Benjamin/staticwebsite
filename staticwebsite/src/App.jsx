@@ -5,57 +5,49 @@ function App() {
   return (
     <>
       {/* Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-light bg-light py-3">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">My Personalized Website</a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ms-auto">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">About</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
+          <a className="navbar-brand" href="#">Alisha's Website</a>
+          <div>
+            <a className="nav-link d-inline-block mx-3" href="#home">Home</a>
+            <a className="nav-link d-inline-block mx-3" href="#about">About</a>
+            <a className="nav-link d-inline-block mx-3" href="#contact">Contact</a>
           </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <div className="hero-section text-center py-5">
-        <img src="/path-to-your-image.jpg" alt="Personal" className="hero-image" />
-        <h1>Welcome to My Website</h1>
-        <p>Hi, I'm Alisha Benjamin, and this is a space where I share my work and ideas. I'm passionate about web development, design, and bringing creative projects to life.</p>
+      <div id="home" className="hero-section text-center py-5">
+        <img src="../silhouette.jpg" alt="Personal" className="hero-image mb-4" />
+        <h1 className="display-4">Welcome to My Website</h1>
+        <p className="lead">Hi, I'm Alisha Benjamin, a web developer and a full-time student who is taking Internet Programming at the University of North Texas. </p>
         <a href="#about" className="btn btn-primary mt-3">Learn More</a>
       </div>
 
       {/* About Section */}
-      <section id="about" className="custom-section py-5 bg-light">
-        <div className="container">
+      <section id="about" className="custom-section py-5">
+        <div className="container-fluid">
           <div className="row">
             <div className="col-md-6">
               <h2>About Me</h2>
-              <p>Hello! I'm Alisha Benjamin, a web developer and designer. I love crafting beautiful and functional websites that make an impact. When I'm not coding, I enjoy reading and learning about new tech trends.</p>
+              <p className="lead">Hello! I'm Alisha Benjamin. I am currently a student at the University of North Texas who is majoring in Computer Science. I like frontend to create client side applications for the users to enjoy. </p>
+              <p className="lead">I love working on creative projects that challenge me to think outside the box and push the boundaries of design and code.</p>
             </div>
             <div className="col-md-6">
               <h2>My Work</h2>
-              <p>Over the years, I've worked on a variety of projects, from simple landing pages to complex web applications. I believe in writing clean, maintainable code and continuously improving my skills.</p>
+              <p className="lead">As a student, I've had the opportunity to work on a variety of projects, ranging from simple websites to complex web applications. My focus is always on creating a great user experience and writing clean, maintainable code.</p>
+              <p className="lead">I'm constantly learning and improving my skills to keep up with the latest trends and technologies in the web development world. I graduate in Spring 2024.</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="contact-section py-5 bg-light">
+        <div className="container-fluid text-center">
+          <h2>Contact Me</h2>
+          <p className="lead">If you'd like to get in touch, feel free to reach out!</p>
+          <a href="mailto:alishabenjamin9@gmail.com" className="btn btn-outline-primary mt-3">Send an Email</a>
         </div>
       </section>
 
